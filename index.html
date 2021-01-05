@@ -1,0 +1,130 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<!-- saved from url=(0022)http://internet.e-mail -->
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>TITULO</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="e0e4e8">
+
+
+<ajs name="Descartes" width=790 height=500 code="Descartes">
+   <param name="tamaño" value="790x500">
+   <param name="image_loader" value="">
+   <param name="expand" value="">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="sí">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versión" value="5.356, 2016-05-03">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no ancho_este=150 ancho_oeste=150 alto=40">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='sí' escala='100' O.x='-10' O.y='49%' imagen='imagenes/fondo.png' despl_imagen='mosaico' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='pista' x='30' y='360' ancho='122' alto='122' dibujar-si='pista3=3' fijo='sí' escala='30' O.x='-60' O.y='60' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='889498' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='mascara' dibujar-si='correcto|fin' fijo='sí' escala='100' O.x='-10' O.y='49%' despl_imagen='mosaico' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='E4' x='390' y='100' ancho='385' alto='390' dibujar-si='fin' fijo='sí' despl_imagen='arr-izq' fondo='11a36000' red='no' red10='no' ejes='no' texto='405860'">
+   <param name="C_01" value="id='n1' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Pista 2' expresión='(25,230,120,30)' fijo='sí' visible='sí' color='ffff94' color-int='349b4c00' fuente puntos='18' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='pista=2\nnota=nota-nmax[1]/5\n' dibujar-si='pista<2'">
+   <param name="C_02" value="id='n2' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Pista 3' expresión='(25,285,120,30)' fijo='sí' visible='sí' color='ffff94' color-int='349b4c00' fuente puntos='18' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='pista3=3\nnota=nota-nmax[1]/5' dibujar-si='pista3<3' pos_mensajes='centro'">
+   <param name="C_03" value="id='n3' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Borrar' expresión='(210,460,120,30)' fijo='sí' visible='sí' color='ffff94' color-int='349b4c00' fuente puntos='18' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='nota=nota-nmax[1]/5\nborra()' dibujar-si='(otro>1)&(correcto=0)&(fin=0)' pos_mensajes='centro'">
+   <param name="C_04" value="id='n4' tipo='numérico' interfaz='botón' región='interior' espacio='mascara' nombre='Siguiente palabra' expresión='(190,380,170,40)' fijo='sí' visible='sí' color='blanco' color-int='349b4c00' fuente puntos='18' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='resultado=resultado+nota\nnota=10\nlinea=0\nborra()\nlimpia()\notro=1\notra=otra+1\npalabra=palabra[otra]\nL=_length_(palabra)\ncontrola()\nLT=27\nreduce()\nasigna_modo()\nasigna_letrasi()\nasigna_letras()\nmarcas2()\nrta=&squot;&squot;\npista=0\npista3=0\n' dibujar-si='otra<palabra[0]' pos_mensajes='centro'">
+   <param name="C_05" value="id='n5' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Me rindo' expresión='(190,380,170,40)' fijo='sí' visible='sí' color='blanco' color-int='349b4c00' fuente puntos='22' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='nota=0\nlinea=0\nresultado=resultado+nota\nnota=10\nborra()\nlimpia()\notro=1\notra=otra+1\npalabra=palabra[otra]\nL=_length_(palabra)\ncontrola()\nLT=27\nreduce()\nasigna_modo()\nasigna_letrasi()\nasigna_letras()\nmarcas2()\nrta=&squot;&squot;\npista=0\npista3=0\n' dibujar-si='(correcto=0)&(otra<(_Eval_(palabra[0])))' pos_mensajes='centro'">
+   <param name="C_06" value="id='n6' tipo='numérico' interfaz='botón' región='interior' espacio='mascara' nombre='Resultados' expresión='(190,380,170,40)' fijo='sí' visible='sí' color='blanco' color-int='349b4c00' negrita='sí' fuente puntos='20' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='resultado=resultado+nota\nnota_final=(resultado/palabra[0])*(nmax[1]/10)\nparent.set(&squot;var1&squot;,nota_final)\nparent.update()\nfin=1\n\n' dibujar-si='(otra=(_Eval_(palabra[0])))&(correcto)&(fin=0)' pos_mensajes='centro'">
+   <param name="C_07" value="id='n7' tipo='numérico' interfaz='botón' región='interior' espacio='E1' nombre='Me rindo' expresión='(190,380,170,40)' fijo='sí' visible='sí' color='amarillo' color-int='349b4c00' fuente puntos='22' imagen='_STYLE_|border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' acción='calcular' parámetro='nota=0\nresultado=resultado+nota\nnota_final=(resultado/10)*(nmax[1]/palabra[0])\nparent.set(&squot;var1&squot;,nota_final)\nparent.update()\nfin=1\n\n' dibujar-si='(correcto=0)&(otra=(_Eval_(palabra[0])))&(fin=0)' pos_mensajes='centro'">
+  
+   <param name="A_01" value="id='x' vector='sí' evaluar='una-sola-vez' tamaño='30' expresión='x[0]=0;x[1]=0;x[2]=0'">
+   <param name="A_02" value="id='y' vector='sí' evaluar='una-sola-vez' tamaño='30' expresión='y[0]=0;y[1]=0;y[2]=0'">
+   <param name="A_03" value="id='xs' vector='sí' evaluar='una-sola-vez' tamaño='30' expresión='xs[0]=0;xs[1]=0;xs[2]=0'">
+   <param name="A_04" value="id='ys' vector='sí' evaluar='una-sola-vez' tamaño='30' expresión='ys[0]=0;ys[1]=0;ys[2]=0'">
+   <param name="A_05" value="id='letrai' vector='sí' evaluar='una-sola-vez' tamaño='28' expresión='letrai[0]=0;letrai[1]=&squot;A&squot;;letrai[2]=&squot;B&squot;;letrai[3]=&squot;C&squot;;letrai[4]=&squot;D&squot;;letrai[5]=&squot;E&squot;;letrai[6]=&squot;F&squot;;letrai[7]=&squot;G&squot;;letrai[8]=&squot;H&squot;;letrai[9]=&squot;I&squot;;letrai[10]=&squot;J&squot;;letrai[11]=&squot;K&squot;;letrai[12]=&squot;L&squot;;letrai[13]=&squot;M&squot;;letrai[14]=&squot;N&squot;;letrai[15]=&squot;Ñ&squot;;letrai[16]=&squot;O&squot;;letrai[17]=&squot;P&squot;;letrai[18]=&squot;Q&squot;;letrai[19]=&squot;R&squot;;letrai[20]=&squot;S&squot;;letrai[21]=&squot;T&squot;;letrai[22]=&squot;U&squot;;letrai[23]=&squot;V&squot;;letrai[24]=&squot;W&squot;;letrai[25]=&squot;X&squot;;letrai[26]=&squot;Y&squot;;letrai[27]=&squot;Z&squot;;'">
+   <param name="A_06" value="id='LC' vector='sí' evaluar='una-sola-vez' tamaño='13' expresión='LC[0]=0;LC[1]=0;LC[2]=0'">
+   <param name="A_07" value="id='letra' vector='sí' evaluar='una-sola-vez' tamaño='17' expresión='letra[0]=0;letra[1]=0;letra[2]=0'">
+   <param name="A_08" value="id='marca' vector='sí' evaluar='una-sola-vez' tamaño='30' expresión='marca[0]=0;marca[1]=0;marca[2]=0'">
+   <param name="A_09" value="id='marca2' vector='sí' evaluar='una-sola-vez' tamaño='30' expresión='marca2[0]=0;marca2[1]=0;marca2[2]=0'">
+   <param name="A_10" value="id='palabra' vector='sí' evaluar='una-sola-vez' tamaño='30' expresión='palabra[0]=0;palabra[1]=0;palabra[2]=0' archivo='textos/palabras.txt'">
+   <param name="A_11" value="id='marca3' vector='sí' evaluar='una-sola-vez' tamaño='30' expresión='marca3[0]=0;marca3[1]=0;marca3[2]=0'">
+   <param name="A_12" value="id='nmax' vector='sí' evaluar='una-sola-vez' expresión='nmax[0]=0;nmax[1]=0;nmax[2]=0' archivo='textos/nota_max.txt'">
+   <param name="A_13" value="id='reduce()' algoritmo='sí' algoritmo='sí' inicio='r=0' hacer='r=r+1;reduce2(r);' mientras='r<12'">
+   <param name="A_14" value="id='reduce2(x)' algoritmo='sí' expresión='x' algoritmo='sí' inicio='i=0' hacer='i=i+1;cambia=(LC[x]=letrai[i])?1:0;LT=LT-cambia;corre=(cambia=1)?corre(i):0;' mientras='i<LT'">
+   <param name="A_15" value="id='corre(x)' algoritmo='sí' expresión='x' algoritmo='sí' inicio='g=x-1' hacer='g=g+1;letrai[g]=letrai[g+1]' mientras='g<LT'">
+   <param name="A_16" value="id='rastro()' algoritmo='sí' algoritmo='sí' hacer='x[otro]=(E1.mouse_pressed)*(E1.mouse_x>0)*(E1.mouse_y<4)?ent(E1.mouse_x):x[otro];y[otro]=(E1.mouse_pressed)*(E1.mouse_x>0)*(E1.mouse_y<4)?ent(E1.mouse_y):y[otro];'">
+   <param name="A_17" value="id='marcas()' algoritmo='sí' algoritmo='sí' inicio='i=0' hacer='i=i+1;marca[i]=(x[i]=0)&(y[i]=3)?1:marca[i];marca[i]=(x[i]=1)&(y[i]=3)?2:marca[i];marca[i]=(x[i]=2)&(y[i]=3)?3:marca[i];marca[i]=(x[i]=3)&(y[i]=3)?4:marca[i];marca[i]=(x[i]=0)&(y[i]=2)?5:marca[i];marca[i]=(x[i]=1)&(y[i]=2)?6:marca[i];marca[i]=(x[i]=2)&(y[i]=2)?7:marca[i];marca[i]=(x[i]=3)&(y[i]=2)?8:marca[i];marca[i]=(x[i]=0)&(y[i]=1)?9:marca[i];marca[i]=(x[i]=1)&(y[i]=1)?10:marca[i];marca[i]=(x[i]=2)&(y[i]=1)?11:marca[i];marca[i]=(x[i]=3)&(y[i]=1)?12:marca[i];marca[i]=(x[i]=0)&(y[i]=0)?13:marca[i];marca[i]=(x[i]=1)&(y[i]=0)?14:marca[i];marca[i]=(x[i]=2)&(y[i]=0)?15:marca[i];marca[i]=(x[i]=3)&(y[i]=0)?16:marca[i];' mientras='i<otro'">
+   <param name="A_18" value="id='marcas2()' algoritmo='sí' algoritmo='sí' inicio='i=0' hacer='i=i+1;;marca2[1]=(xs[i]=0)&(ys[i]=3)?1:marca2[1];marca2[2]=(xs[i]=1)&(ys[i]=3)?1:marca2[2];marca2[3]=(xs[i]=2)&(ys[i]=3)?1:marca2[3];marca2[4]=(xs[i]=3)&(ys[i]=3)?1:marca2[4];marca2[5]=(xs[i]=0)&(ys[i]=2)?1:marca2[5];marca2[6]=(xs[i]=1)&(ys[i]=2)?1:marca2[6];marca2[7]=(xs[i]=2)&(ys[i]=2)?1:marca2[7];marca2[8]=(xs[i]=3)&(ys[i]=2)?1:marca2[8];marca2[9]=(xs[i]=0)&(ys[i]=1)?1:marca2[9];marca2[10]=(xs[i]=1)&(ys[i]=1)?1:marca2[10];marca2[11]=(xs[i]=2)&(ys[i]=1)?1:marca2[11];marca2[12]=(xs[i]=3)&(ys[i]=1)?1:marca2[12];marca2[13]=(xs[i]=0)&(ys[i]=0)?1:marca2[13];marca2[14]=(xs[i]=1)&(ys[i]=0)?1:marca2[14];marca2[15]=(xs[i]=2)&(ys[i]=0)?1:marca2[15];marca2[16]=(xs[i]=3)&(ys[i]=0)?1:marca2[16];' mientras='i<L'">
+   <param name="A_19" value="id='modo1()' algoritmo='sí' algoritmo='sí' hacer=';xs[1]=0;xs[2]=1;xs[3]=2;xs[4]=2;xs[5]=1;xs[6]=1;xs[7]=2;xs[8]=3;xs[9]=3;xs[10]=2;xs[11]=1;xs[12]=0;;ys[1]=0;ys[2]=0;ys[3]=0;ys[4]=1;ys[5]=1;ys[6]=2;ys[7]=2;ys[8]=2;ys[9]=3;ys[10]=3;ys[11]=3;ys[12]=3;'">
+   <param name="A_20" value="id='modo2()' algoritmo='sí' algoritmo='sí' hacer=';xs[1]=0;xs[2]=1;xs[3]=2;xs[4]=3;xs[5]=3;xs[6]=2;xs[7]=1;xs[8]=0;xs[9]=0;xs[10]=0;xs[11]=1;xs[12]=2;;ys[1]=3;ys[2]=3;ys[3]=3;ys[4]=3;ys[5]=2;ys[6]=2;ys[7]=2;ys[8]=2;ys[9]=1;ys[10]=0;ys[11]=0;ys[12]=0;'">
+   <param name="A_21" value="id='modo3()' algoritmo='sí' algoritmo='sí' hacer=';xs[1]=0;xs[2]=1;xs[3]=1;xs[4]=2;xs[5]=3;xs[6]=3;xs[7]=2;xs[8]=2;xs[9]=1;xs[10]=1;xs[11]=2;xs[12]=3;;ys[1]=2;ys[2]=2;ys[3]=3;ys[4]=3;ys[5]=3;ys[6]=2;ys[7]=2;ys[8]=1;ys[9]=1;ys[10]=0;ys[11]=0;ys[12]=0;'">
+   <param name="A_22" value="id='modo4()' algoritmo='sí' algoritmo='sí' hacer=';xs[1]=0;xs[2]=0;xs[3]=1;xs[4]=1;xs[5]=2;xs[6]=2;xs[7]=1;xs[8]=0;xs[9]=0;xs[10]=1;xs[11]=2;xs[12]=3;;ys[1]=1;ys[2]=0;ys[3]=0;ys[4]=1;ys[5]=1;ys[6]=2;ys[7]=2;ys[8]=2;ys[9]=3;ys[10]=3;ys[11]=3;ys[12]=3;'">
+   <param name="A_23" value="id='modo5()' algoritmo='sí' algoritmo='sí' hacer=';xs[1]=0;xs[2]=1;xs[3]=1;xs[4]=2;xs[5]=2;xs[6]=3;xs[7]=3;xs[8]=3;xs[9]=3;xs[10]=2;xs[11]=1;xs[12]=0;;ys[1]=2;ys[2]=2;ys[3]=1;ys[4]=1;ys[5]=0;ys[6]=0;ys[7]=1;ys[8]=2;ys[9]=3;ys[10]=3;ys[11]=3;ys[12]=3;'">
+   <param name="A_24" value="id='modo6()' algoritmo='sí' algoritmo='sí' hacer=';xs[1]=0;xs[2]=0;xs[3]=0;xs[4]=1;xs[5]=1;xs[6]=1;xs[7]=2;xs[8]=2;xs[9]=2;xs[10]=3;xs[11]=3;xs[12]=3;;ys[1]=2;ys[2]=1;ys[3]=0;ys[4]=0;ys[5]=1;ys[6]=2;ys[7]=2;ys[8]=1;ys[9]=0;ys[10]=0;ys[11]=1;ys[12]=2;'">
+   <param name="A_25" value="id='modo7()' algoritmo='sí' algoritmo='sí' hacer=';xs[1]=3;xs[2]=2;xs[3]=2;xs[4]=1;xs[5]=0;xs[6]=0;xs[7]=1;xs[8]=2;xs[9]=3;xs[10]=3;xs[11]=2;xs[12]=1;;ys[1]=3;ys[2]=3;ys[3]=2;ys[4]=2;ys[5]=2;ys[6]=1;ys[7]=1;ys[8]=1;ys[9]=1;ys[10]=0;ys[11]=0;ys[12]=0;'">
+   <param name="A_26" value="id='modo8()' algoritmo='sí' algoritmo='sí' hacer=';xs[1]=1;xs[2]=2;xs[3]=2;xs[4]=1;xs[5]=0;xs[6]=0;xs[7]=1;xs[8]=2;xs[9]=3;xs[10]=3;xs[11]=2;xs[12]=1;;ys[1]=3;ys[2]=3;ys[3]=2;ys[4]=2;ys[5]=2;ys[6]=1;ys[7]=1;ys[8]=1;ys[9]=1;ys[10]=0;ys[11]=0;ys[12]=0;'">
+   <param name="A_27" value="id='modo9()' algoritmo='sí' algoritmo='sí' hacer=';xs[1]=0;xs[2]=0;xs[3]=1;xs[4]=1;xs[5]=2;xs[6]=3;xs[7]=3;xs[8]=3;xs[9]=2;xs[10]=1;xs[11]=1;xs[12]=2;;ys[1]=3;ys[2]=2;ys[3]=2;ys[4]=3;ys[5]=3;ys[6]=3;ys[7]=2;ys[8]=1;ys[9]=1;ys[10]=1;ys[11]=0;ys[12]=0;'">
+   <param name="A_28" value="id='modo10()' algoritmo='sí' algoritmo='sí' hacer=';xs[1]=0;xs[2]=1;xs[3]=2;xs[4]=2;xs[5]=3;xs[6]=3;xs[7]=3;xs[8]=2;xs[9]=1;xs[10]=1;xs[11]=2;xs[12]=3;;ys[1]=1;ys[2]=1;ys[3]=1;ys[4]=0;ys[5]=0;ys[6]=1;ys[7]=2;ys[8]=2;ys[9]=2;ys[10]=3;ys[11]=3;ys[12]=3;'">
+   <param name="A_29" value="id='asigna_letras()' algoritmo='sí' algoritmo='sí' inicio='i=0' hacer='i=i+1;letra[1]=(xs[i]=0)&(ys[i]=3)?_charAt_(palabra,i-1):letra[1];letra[2]=(xs[i]=1)&(ys[i]=3)?_charAt_(palabra,i-1):letra[2];letra[3]=(xs[i]=2)&(ys[i]=3)?_charAt_(palabra,i-1):letra[3];letra[4]=(xs[i]=3)&(ys[i]=3)?_charAt_(palabra,i-1):letra[4];letra[5]=(xs[i]=0)&(ys[i]=2)?_charAt_(palabra,i-1):letra[5];letra[6]=(xs[i]=1)&(ys[i]=2)?_charAt_(palabra,i-1):letra[6];letra[7]=(xs[i]=2)&(ys[i]=2)?_charAt_(palabra,i-1):letra[7];letra[8]=(xs[i]=3)&(ys[i]=2)?_charAt_(palabra,i-1):letra[8];letra[9]=(xs[i]=0)&(ys[i]=1)?_charAt_(palabra,i-1):letra[9];letra[10]=(xs[i]=1)&(ys[i]=1)?_charAt_(palabra,i-1):letra[10];letra[11]=(xs[i]=2)&(ys[i]=1)?_charAt_(palabra,i-1):letra[11];letra[12]=(xs[i]=3)&(ys[i]=1)?_charAt_(palabra,i-1):letra[12];letra[13]=(xs[i]=0)&(ys[i]=0)?_charAt_(palabra,i-1):letra[13];letra[14]=(xs[i]=1)&(ys[i]=0)?_charAt_(palabra,i-1):letra[14];letra[15]=(xs[i]=2)&(ys[i]=0)?_charAt_(palabra,i-1):letra[15];letra[16]=(xs[i]=3)&(ys[i]=0)?_charAt_(palabra,i-1):letra[16]' mientras='i<L'">
+   <param name="A_30" value="id='asigna_letrasi()' algoritmo='sí' algoritmo='sí' inicio='i=0' hacer='i=i+1;kk=rnd*LT+1;letra[i]=letrai[kk];;' mientras='i<16'">
+   <param name="A_31" value="id='tema' vector='sí' evaluar='una-sola-vez' expresión='tema[0]=0;tema[1]=0;tema[2]=0' archivo='textos/tema.txt'">
+   <param name="A_32" value="id='borra()' algoritmo='sí' algoritmo='sí' inicio='i=0' hacer='i=i+1;otro=1;rta=&squot;&squot;;marca[i]=0' mientras='i<otro'">
+   <param name="A_33" value="id='limpia()' algoritmo='sí' expresión='x' algoritmo='sí' inicio='i=0' hacer='i=i+1;marca[i]=0;marca2[i]=0;letrai[0]=0;letrai[1]=&squot;A&squot;;letrai[2]=&squot;B&squot;;letrai[3]=&squot;C&squot;;letrai[4]=&squot;D&squot;;letrai[5]=&squot;E&squot;;letrai[6]=&squot;F&squot;;letrai[7]=&squot;G&squot;;letrai[8]=&squot;H&squot;;letrai[9]=&squot;I&squot;;letrai[10]=&squot;J&squot;;letrai[11]=&squot;K&squot;;letrai[12]=&squot;L&squot;;letrai[13]=&squot;M&squot;;letrai[14]=&squot;N&squot;;letrai[15]=&squot;Ñ&squot;;letrai[16]=&squot;O&squot;;letrai[17]=&squot;P&squot;;letrai[18]=&squot;Q&squot;;letrai[19]=&squot;R&squot;;letrai[20]=&squot;S&squot;;letrai[21]=&squot;T&squot;;letrai[22]=&squot;U&squot;;letrai[23]=&squot;V&squot;;letrai[24]=&squot;W&squot;;letrai[25]=&squot;X&squot;;letrai[26]=&squot;Y&squot;;letrai[27]=&squot;Z&squot;;' mientras='i<16'">
+   <param name="A_34" value="id='modo11()' algoritmo='sí' algoritmo='sí' hacer=';xs[1]=0;xs[2]=0;xs[3]=0;xs[4]=1;xs[5]=2;xs[6]=2;xs[7]=3;xs[8]=3;xs[9]=3;xs[10]=3;xs[11]=2;xs[12]=1;;ys[1]=3;ys[2]=2;ys[3]=1;ys[4]=1;ys[5]=1;ys[6]=0;ys[7]=0;ys[8]=1;ys[9]=2;ys[10]=3;ys[11]=3;ys[12]=3;'">
+   <param name="A_35" value="id='modo12()' algoritmo='sí' algoritmo='sí' hacer=';xs[1]=1;xs[2]=2;xs[3]=3;xs[4]=3;xs[5]=3;xs[6]=2;xs[7]=2;xs[8]=1;xs[9]=1;xs[10]=0;xs[11]=0;xs[12]=0;;ys[1]=2;ys[2]=2;ys[3]=2;ys[4]=1;ys[5]=0;ys[6]=0;ys[7]=1;ys[8]=1;ys[9]=0;ys[10]=0;ys[11]=1;ys[12]=2;'">
+   <param name="A_36" value="id='asigna_modo()' algoritmo='sí' algoritmo='sí' hacer='modo=ent(rnd*12)+1;asigna=(modo=1)?modo1():asigna;asigna=(modo=2)?modo2():asigna;asigna=(modo=3)?modo3():asigna;asigna=(modo=4)?modo4():asigna;asigna=(modo=5)?modo5():asigna;asigna=(modo=6)?modo6():asigna;asigna=(modo=7)?modo7():asigna;asigna=(modo=8)?modo8():asigna;asigna=(modo=9)?modo9():asigna;asigna=(modo=10)?modo10():asigna;asigna=(modo=11)?modo11():asigna;asigna=(modo=12)?modo12():asigna'">
+   <param name="A_37" value="id='controla()' algoritmo='sí' algoritmo='sí' hacer='LC[1]=_charAt_(palabra,0);LC[2]=_charAt_(palabra,1);LC[3]=_charAt_(palabra,2);LC[4]=_charAt_(palabra,3);LC[5]=_charAt_(palabra,4);LC[6]=_charAt_(palabra,5);LC[7]=_charAt_(palabra,6);LC[8]=_charAt_(palabra,7);LC[9]=_charAt_(palabra,8);LC[10]=_charAt_(palabra,9);LC[11]=_charAt_(palabra,10);LC[12]=_charAt_(palabra,11)'">
+   <param name="A_38" value="id='marcas3()' algoritmo='sí' algoritmo='sí' inicio='i=0' hacer='i=i+1;marca3[i]=(xs[i]=0)&(ys[i]=3)?1:marca3[i];marca3[i]=(xs[i]=1)&(ys[i]=3)?2:marca3[i];marca3[i]=(xs[i]=2)&(ys[i]=3)?3:marca3[i];marca3[i]=(xs[i]=3)&(ys[i]=3)?4:marca3[i];marca3[i]=(xs[i]=0)&(ys[i]=2)?5:marca3[i];marca3[i]=(xs[i]=1)&(ys[i]=2)?6:marca3[i];marca3[i]=(xs[i]=2)&(ys[i]=2)?7:marca3[i];marca3[i]=(xs[i]=3)&(ys[i]=2)?8:marca3[i];marca3[i]=(xs[i]=0)&(ys[i]=1)?9:marca3[i];marca3[i]=(xs[i]=1)&(ys[i]=1)?10:marca3[i];marca3[i]=(xs[i]=2)&(ys[i]=1)?11:marca3[i];marca3[i]=(xs[i]=3)&(ys[i]=1)?12:marca3[i];marca3[i]=(xs[i]=0)&(ys[i]=0)?13:marca3[i];marca3[i]=(xs[i]=1)&(ys[i]=0)?14:marca3[i];marca3[i]=(xs[i]=2)&(ys[i]=0)?15:marca3[i];marca3[i]=(xs[i]=3)&(ys[i]=0)?16:marca3[i]' mientras='i<L'">
+   <param name="A_39" value="id='verifica()' algoritmo='sí' algoritmo='sí' inicio='i=0' hacer='i=i+1;linea=linea+(marca[i]=marca3[i])' mientras='i<L'">
+   <param name="A_40" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='otro=1;otra=1;nota=10;resultado=0;x[otro]=100;y[otro]=100;palabra=palabra[otra];L=_length_(palabra);controla();LT=27;reduce();;asigna_modo();asigna_letrasi();asigna_letras();rta=&squot;&squot;;;marcas2();'">
+   <param name="A_41" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='rastro();marcas();correcto=(rta=palabra);'">
+   <param name="A_42" value="id='e3' evento='sí' condición='(E1.mouse_pressed)*(E1.mouse_x>0)*(E1.mouse_y<4)' acción='calcular' parámetro='rta=rta+letra[marca[otro]]\notro=otro+1\ntraza=1\nx[otro]=100\ny[otro]=100' ejecución='alternar' pos_mensajes='centro'">
+   <param name="A_43" value="id='e4' evento='sí' condición='correcto' acción='calcular' parámetro='marcas3()\nverifica()\nbuenas=buenas+1' ejecución='alternar' pos_mensajes='centro'">
+   <param name="G_01" value="espacio='E1' tipo='polígono' dibujar-si='ee' expresión='(s,3)(s,4)(s+1,4)(s+1,3)(s,3)' familia='s' s.intervalo='[0,3]' s.pasos='3' ancho='2'">
+   <param name="G_02" value="espacio='E1' tipo='polígono' dibujar-si='ee' expresión='(s,2)(s,3)(s+1,3)(s+1,2)(s,2)' familia='s' s.intervalo='[0,3]' s.pasos='3' ancho='2'">
+   <param name="G_03" value="espacio='E1' tipo='polígono' dibujar-si='ee' expresión='(s,1)(s,2)(s+1,2)(s+1,1)(s,1)' familia='s' s.intervalo='[0,3]' s.pasos='3' ancho='2'">
+   <param name="G_04" value="espacio='E1' tipo='polígono' dibujar-si='ee' expresión='(s,0)(s,1)(s+1,1)(s+1,0)(s,0)' familia='s' s.intervalo='[0,3]' s.pasos='3' ancho='2'">
+   <param name="G_05" value="espacio='E1' tipo='polígono' dibujar-si='traza' expresión='(x[s],y[s])(x[s],y[s]+1)(x[s]+1,y[s]+1)(x[s]+1,y[s])' familia='s' s.intervalo='[1,otro-1]' s.pasos='otro-2' relleno='818b3d16'">
+   <param name="G_06" value="espacio='pista' tipo='polígono' color='grisObscuro' dibujar-si='marca2[s+1]=1' expresión='(s,3)(s,4)(s+1,4)(s+1,3)(s,3)' familia='s' s.intervalo='[0,3]' s.pasos='3' relleno='818b3d16'">
+   <param name="G_07" value="espacio='pista' tipo='polígono' color='grisObscuro' dibujar-si='marca2[s+5]=1' expresión='(s,2)(s,3)(s+1,3)(s+1,2)(s,2)' familia='s' s.intervalo='[0,3]' s.pasos='3' relleno='818b3d16'">
+   <param name="G_08" value="espacio='pista' tipo='polígono' color='grisObscuro' dibujar-si='marca2[s+9]=1' expresión='(s,1)(s,2)(s+1,2)(s+1,1)(s,1)' familia='s' s.intervalo='[0,3]' s.pasos='3' relleno='818b3d16'">
+   <param name="G_09" value="espacio='pista' tipo='polígono' color='grisObscuro' dibujar-si='marca2[s+13]=1' expresión='(s,0)(s,1)(s+1,1)(s+1,0)(s,0)' familia='s' s.intervalo='[0,3]' s.pasos='3' relleno='818b3d16'">
+   <param name="G_10" value="espacio='E1' tipo='texto' color='000000' expresión='[310+100*s,105]' familia='s' s.intervalo='[1,4]' s.pasos='3' texto='[letra[s]]' fuente='Monospaced,BOLD,80' decimales='0' fijo='sí'">
+   <param name="G_11" value="espacio='E1' tipo='texto' color='000000' expresión='[310+100*s,205]' familia='s' s.intervalo='[1,4]' s.pasos='3' texto='[letra[s+4]]' fuente='Monospaced,BOLD,80' decimales='0' fijo='sí'">
+   <param name="G_12" value="espacio='E1' tipo='texto' color='000000' expresión='[310+100*s,305]' familia='s' s.intervalo='[1,4]' s.pasos='3' texto='[letra[s+8]]' fuente='Monospaced,BOLD,80' decimales='0' fijo='sí'">
+   <param name="G_13" value="espacio='E1' tipo='texto'color='000000' expresión='[310+100*s,405]' familia='s' s.intervalo='[1,4]' s.pasos='3' texto='[letra[s+12]]' fuente='Monospaced,BOLD,80' decimales='0' fijo='sí'">
+   <param name="G_14" value="espacio='E1' tipo='texto' color='065790' expresión='[0,100,400,15]' texto='[rta]' fuente='Monospaced,BOLD,40' fijo='sí' ancho='400' ">
+   <param name="G_15" value="espacio='E1' tipo='texto' color='60320b' expresión='[0,5,790,15]' texto='ENCUENTRA [tema[1]]' fuente='Monospaced,BOLD,30' fijo='sí' ancho='790' ">
+   <param name="G_16" value="espacio='E1' tipo='texto'  color='000000' expresión='[0,50,790,10]' texto='Haz clic sobre las letras de la cuadrícula hasta formar la palabra buscada. Pista adicional, rebaja la nota.' fuente='Monospaced,BOLD,20' fijo='sí' ancho='790'">
+   <param name="G_17" value="espacio='E1' tipo='texto' color='893f00' expresión='[0,160,380,30]' texto='Pista 1. La palabra se puede formar con letras contiguas, horizontal o verticalmente.' fuente='Monospaced,BOLD,20' fijo='sí' ancho='380' color_borde_texto='eb000000'">
+   <param name="G_18" value="espacio='E1' tipo='texto' color='893f00' dibujar-si='pista=2' expresión='[0,240,380,20]' texto='Pista 2. La palabra que debes encontrar es [palabra]' fuente='Monospaced,BOLD,20' fijo='sí' ancho='380' color_borde_texto='eb000000'">
+   <param name="G_19" value="espacio='E1' tipo='texto' color='893f00' dibujar-si='pista3=3' expresión='[0,310,380,20]' texto='Pista 3. Las letras de la palabra se han puesto en estas cuadrículas:' fuente='Monospaced,BOLD,20' fijo='sí' ancho='380' color_borde_texto='eb000000'">
+   <param name="G_20" value="espacio='mascara' tipo='texto' color='rojo' dibujar-si='correcto&(linea=L)' expresión='[160,345,220,10]' texto='¡Muy bien!' fuente='Monospaced,BOLD,28' fijo='sí' ancho='220' color_borde_texto='negro'">
+   <param name="G_21" value="espacio='E1' tipo='imagen' expresión='(0,4)' archivo='imagenes/fondo2.png'">
+   <param name="G_22" value="espacio='E1' tipo='texto' color='995700' expresión='[160,430,220]' texto='Nota parcial: [(resultado/palabra[0])*(nmax[1]/10)]' fuente='Monospaced,BOLD,20' decimales='1' fijo='sí' ancho='220'">
+   <param name="G_23" value="espacio='E4' tipo='texto' color='blanco' expresión='[0,120,385,15]' texto='Palabras a encontrar: [palabra[0]]' fuente='Monospaced,BOLD,24' decimales='0' fijo='sí' ancho='385'">
+   <param name="G_24" value="espacio='E4' tipo='texto' color='blanco' expresión='[0,150,385,15]' texto='Palabras encontradas: [buenas]' fuente='Monospaced,BOLD,24' decimales='0' fijo='sí' ancho='385'">
+   <param name="G_25" value="espacio='E4' tipo='texto' color='verde' expresión='[0,200,385,15]' texto='Nota final: [nota_final]' fuente='Monospaced,BOLD,30' decimales='1' fijo='sí' ancho='385'">
+   <param name="G_26" value="espacio='mascara' tipo='texto' color='cf0000' dibujar-si='correcto&(linea!=L)' expresión='[160,300,220,10]' texto='¡No usaste letras contiguas!' fuente='Monospaced,BOLD,28' fijo='sí' ancho='220' color_borde_texto='negro'">
+
+
+</ajs>
+<script type="descartes/vectorFile" id="textos/nota_max.txt">
+'Escribe la nota máxima'
+10
+</script>
+<script type="descartes/vectorFile" id="textos/tema.txt">
+'Escribe el tema'
+'VOCABULARIO DEL TEMA'
+</script>
+<script type="descartes/vectorFile" id="textos/palabras.txt">
+'7'
+'HIATO'
+'AGUDA'
+'TÓNICA'
+'DIPTONGO'
+'LLANA'
+'ÁTONA'
+'ABIERTA'
+
+</script>
+
+
+</body>
+</html>
